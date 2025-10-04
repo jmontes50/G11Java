@@ -10,6 +10,7 @@ h1 {
   font-style:italic;
 }
 
+/* selector de clase, va con prefijo de . */
 .parrafos {
   font-weight: bold;
   background-color: peru;
@@ -18,4 +19,9 @@ h1 {
 .importante {
   font-size: 18px;
   text-decoration: underline;
+}
+
+/* selector de id, va con prefijo de # */
+#nota {
+  color: white;
 }
