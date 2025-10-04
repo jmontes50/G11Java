@@ -47,3 +47,10 @@ span ~ article {
   color:steelblue;
   font-weight: bold;
 }
+
+/* pseudo clases */
+li:hover {
+  text-decoration: underline;
+  color:crimson;
+  cursor: pointer;
+}
