@@ -1,0 +1,21 @@
+
+/* selector de etiqueta, estilos generales */
+h1 {
+  color:blue;
+  background-color: lightcoral;
+}
+
+/* selector universal, a todo */
+* {
+  font-style:italic;
+}
+
+.parrafos {
+  font-weight: bold;
+  background-color: peru;
+}
+
+.importante {
+  font-size: 18px;
+  text-decoration: underline;
+}

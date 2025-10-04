@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- W2. Estilos en head, esto tampoco es buena práctica -->
+
+  <!-- W3. Archivo independiente de CSS -->
   <style>
     h1 {
       font-family: Arial;
       color:lightgreen;
     }
   </style>
+  <link rel="stylesheet" href="./01-introduccion.css">
 </head>
 <body>
   <header>
@@ -19,12 +22,21 @@
     <h5 style="background-color:lightgreen; color:blue">Lorem ipsum dolor sit amet.</h5>
   </header>
   <main>
+    <h1>Secciones</h1>
     <section>
       <h2>Párrafos</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="parrafos importante">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="parrafos">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="parrafos">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="parrafos">
+        Lorem ipsum dolor sit amet.
+      </p>
     </section>
   </main>
 </body>
