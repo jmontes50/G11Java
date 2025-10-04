@@ -84,6 +84,9 @@
         <br/>
         <h4>Selecciona tu ciudad</h4>
         <select name="ciudad">
+          <option disabled selected>
+            Selecciona una ciudad
+          </option>
           <option>Lima</option>
           <option>Arequipa</option>
           <option>Cusco</option>
@@ -92,6 +95,15 @@
           <option>Ancash</option>
           <option>Puerto Maldonado</option>
         </select>
+        <br>
+        <h4>Cursos</h4>
+        <input list="cursos">
+        <datalist id="cursos">
+          <option value="React">React</option>
+          <option value="Tailwind">Tailwind</option>
+          <option value="Angular">Angular</option>
+          <option value="Zustand">Zustand</option>
+        </datalist>
       </form>
     </main>
   </body>
