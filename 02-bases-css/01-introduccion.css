@@ -25,3 +25,13 @@ h1 {
 #nota {
   color: white;
 }
+
+/* todos los li que esten dentro de cualquier ul */
+ul li {
+  color:dodgerblue;
+}
+
+/* > aplica SOLO a los primeros elementos hijos */
+.champions > li {
+  font-weight: bold;
+}
