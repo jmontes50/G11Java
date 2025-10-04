@@ -26,6 +26,7 @@ h1 {
   color: white;
 }
 
+/* operadores */
 /* todos los li que esten dentro de cualquier ul */
 ul li {
   color:dodgerblue;
@@ -33,5 +34,16 @@ ul li {
 
 /* > aplica SOLO a los primeros elementos hijos */
 .champions > li {
+  font-weight: bold;
+}
+
+/* El primer article adyacente después de span  */
+span + article {
+  background-color: yellow;
+}
+
+/* aplicará a todos los article hermanos que estén después de un span */
+span ~ article {
+  color:steelblue;
   font-weight: bold;
 }
