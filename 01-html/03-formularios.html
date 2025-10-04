@@ -20,6 +20,7 @@
           placeholder="Ej. Juan Perez"
           name="input-nombre"
           value=""
+          required
         >
         <!-- break, br, salto de línea -->
         <br>
@@ -37,6 +38,17 @@
           type="number"
           placeholder="Ej. 25"
           name="input-edad"
+          min="18"
+          max="65"
+        >
+        <br>
+        <label for="input-fecha">Fecha</label>
+        <input
+          id="input-fecha"
+          type="date"
+          name="input-fecha"
+          min="2025-10-01"
+          max="2025-10-31"
         >
         <br>
         <label for="input-password">Contraseña</label>
