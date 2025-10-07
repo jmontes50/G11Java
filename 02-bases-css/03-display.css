@@ -37,10 +37,11 @@ span {
 p {
   /* con inline-block, se acomodan uno al costado del otro pero si nos es posible darles un tamaño */
   /* NO, NO es recomendable forzarlo, inline block tiene un margen que NO se puede removar o modificar  */
+  /* inputs y botones traen inline block */
   display: inline-block;
   background-color: deepskyblue;
   width: 300px;
   height: 50px;
 }
 
-/* inputs y botones traen inline block */
+
