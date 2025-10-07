@@ -1,3 +1,4 @@
+/* reset CSS */
 /* selector universal */
 * {
   /* todos los elementos no tendrán ni padding ni pargin y se acomodarán a los tamaños que indiquemos directamente */
@@ -25,4 +26,18 @@ h2 {
   padding: 5px;
   width:100px;
   height:100px;
+}
+
+h3 {
+  border:2px solid green;
+  margin:10px;
+}
+
+p {
+  border:3px solid orange;
+  /* esto aplica para margin y padding */
+  /* cuando son 4 valores, árriba, derecha, abajo, izquierda, 🕑 */
+  padding: 10px 20px 30px 40px;
+  /* cuando son 2 valores, arribaAbajo y costados */
+  margin: 20px 40px;
 }
