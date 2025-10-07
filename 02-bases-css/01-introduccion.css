@@ -105,3 +105,16 @@ p:nth-child(5){
   font-size:18px;
   color: blue;
 }
+
+/* pseudoelementos */
+.titulo-form::first-letter {
+  font-size: 36px;
+  color: red;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color:skyblue;
+  font-family: 'Courier New';
+}
