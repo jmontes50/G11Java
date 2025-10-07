@@ -48,6 +48,11 @@ span ~ article {
   font-weight: bold;
 }
 
+.champions, .libertadores {
+  /* border:tamaño forma color */
+  border: 2px solid red;
+}
+
 /* pseudo clases */
 li:hover {
   text-decoration: underline;
