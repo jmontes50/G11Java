@@ -5,3 +5,8 @@
   /* temporal */
   border:2px solid red;
 }
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
