@@ -118,3 +118,12 @@ input::placeholder {
   color:skyblue;
   font-family: 'Courier New';
 }
+
+button::before {
+  /* win + .  para los emojis*/
+  content:"👉";
+}
+
+button::after {
+  content:"👈";
+}
