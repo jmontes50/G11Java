@@ -16,3 +16,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
   font-weight: 300;
 }
+
+/* vamos a usarlo para centrar contenido */
+.contenedor {
+  max-width: 1200px;
+  /* al darle el valor auto le estamos diciendo al navegador, que el se encargue */
+  margin:0 auto;
+}
+
+.rectangulo-header {
+  /* las unidades porcentuales suelen tomar el elemento padre como referencia, en este caso header */
+  width: 100%;
+}
