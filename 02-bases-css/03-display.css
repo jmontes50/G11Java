@@ -44,4 +44,9 @@ p {
   height: 50px;
 }
 
-
+aside {
+  /* ignora el elemento con display none, como si no existiera */
+  /* display: none; */
+  /* no lo muestra pero esta ahí, incluso ocupando un espacio */
+  visibility: hidden;
+}
