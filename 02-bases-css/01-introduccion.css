@@ -48,6 +48,7 @@ span ~ article {
   font-weight: bold;
 }
 
+/* aplicar estilos a los selectores separandolos por la coma, como si fuera un Y */
 .champions, .libertadores {
   /* border:tamaño forma color */
   border: 2px solid red;
@@ -59,3 +60,4 @@ li:hover {
   color:crimson;
   cursor: pointer;
 }
+
