@@ -1,0 +1,19 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* temporal */
+  border:2px solid red;
+}
+
+/* los elementos con display block (LA GRAN MAYORIA) se comportan como bloques de lego, si los colocamos uno debajo de otro, por mucho que haya espacio al costado de uno, no se pondrá al costado del otro, "ocupan" todo su ancho */
+
+h1 {
+  background-color: aquamarine;
+  width:200px;
+}
+
+article:nth-of-type(1) {
+  width: 300px;
+  background-color: coral;
+}
