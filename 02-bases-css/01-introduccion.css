@@ -71,3 +71,20 @@ li:hover {
   cursor: pointer;
 }
 
+/* de los tr, toma el séptimo */
+tr:nth-of-type(7) {
+  color: purple;
+  font-weight: bold;
+}
+/* even = par = empate */
+tr:nth-of-type(even){
+  background-color: darkturquoise;
+}
+/* odd = impar */
+tr:nth-of-type(odd){
+  background-color: coral;
+}
+/* contando desde el final cada 4 tr */
+tr:nth-last-of-type(4n) {
+  color: yellow;
+}
