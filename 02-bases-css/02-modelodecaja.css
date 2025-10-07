@@ -1,3 +1,12 @@
+/* selector universal */
+* {
+  /* todos los elementos no tendrán ni padding ni pargin y se acomodarán a los tamaños que indiquemos directamente */
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
 h1 {
   border:2px solid red;
   /* ancho */
@@ -9,4 +18,11 @@ h1 {
   /* box-sizing: content-box; */
   /* contruye la caja pero para las medidas incluye todo desde el borde */
   box-sizing: border-box;
+}
+
+h2 {
+  border:2px solid blue;
+  padding: 5px;
+  width:100px;
+  height:100px;
 }
