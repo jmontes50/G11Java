@@ -54,6 +54,16 @@ span ~ article {
   border: 2px solid red;
 }
 
+/* estilos tabla */
+table {
+  /* al darle collapse hacemos que es espaciado entre bordes de una tabla sea nulo */
+  border-collapse: collapse;
+}
+
+td {
+  border:1px solid black;
+}
+
 /* pseudo clases */
 li:hover {
   text-decoration: underline;
