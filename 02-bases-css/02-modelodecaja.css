@@ -1,0 +1,12 @@
+h1 {
+  border:2px solid red;
+  /* ancho */
+  width: 300px;
+  /* altura */
+  height: 150px;
+  padding: 10px;
+  /* la forma que se contruye las cajas */
+  /* box-sizing: content-box; */
+  /* contruye la caja pero para las medidas incluye todo desde el borde */
+  box-sizing: border-box;
+}
