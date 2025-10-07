@@ -17,3 +17,11 @@ article:nth-of-type(1) {
   width: 300px;
   background-color: coral;
 }
+
+/* los span. a son  */
+span {
+  /* display:inline, se acomoda al costado de otro */
+  /* no podemos cambiar su tamaño, su tamaño se acomoda de acuerdo al contenido que envuelve */
+  background-color: gold;
+  width: 900px;
+}
