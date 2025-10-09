@@ -13,10 +13,10 @@
   display: flex;
 
   /* va a permitirnos alinear los elementos de forma horizontal */
-  /* justify-content: center; */
+  justify-content: center;
   /* justify-content: space-between; */
   /* justify-content: space-evenly; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
 
   /* para alinear de forma vertical */
   align-items: center;
@@ -25,6 +25,11 @@
   /* align-items: flex-start; */
   /* pero con stretch ocupan toda al altura */
   /* align-items: stretch; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+  flex-direction: row;
+  /* gap = brecha, separación  */
+  gap:20px;
 }
 
 .hijo {
