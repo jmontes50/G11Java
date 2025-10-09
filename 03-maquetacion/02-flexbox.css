@@ -21,10 +21,14 @@
   /* para alinear de forma vertical */
   align-items: center;
   /* align-items: flex-end; */
+  /* sin dar un tamaño a .hijo con start se acomodan al contenido */
+  /* align-items: flex-start; */
+  /* pero con stretch ocupan toda al altura */
   /* align-items: stretch; */
 }
 
 .hijo {
+  /* quitar height y width para probar align items */
   height: 100px;
   width: 100px;
   background-color: coral;
