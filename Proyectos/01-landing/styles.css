@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* temporal */
-  border:2px solid red;
+  /* border:2px solid red; */
 }
 
 body {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-white {
-  border-color: black;
+  border: 2px solid black;
   font-weight: 500;
 }
 
