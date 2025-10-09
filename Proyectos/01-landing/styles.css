@@ -74,6 +74,7 @@ ul {
   margin-left:10px;
   min-width: 130px;
   display: inline-block;
+  text-align: center;
 }
 
 .btn-white {
@@ -104,4 +105,13 @@ ul {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.logo {
+  font-size:32px;
+  font-weight: 900;
+}
+
+.btn-sm {
+  padding: 8px 15px;
 }
