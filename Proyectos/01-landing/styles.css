@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* temporal */
-  /* border:2px solid red; */
+  border:2px solid red;
 }
 
 body {
@@ -81,3 +81,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 64px;
 }
 
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 88px;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
