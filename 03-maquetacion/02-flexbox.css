@@ -6,12 +6,12 @@
 
 .padre {
   height: 500px;
-  width: 600px;
+  /* width: 600px; */
+  width: 100%; /*100% del elemento padre(body)*/
   background-color: lightblue;
   border:2px solid blue;
   /* flex trabaja desde el elemento padre */
   display: flex;
-
   /* va a permitirnos alinear los elementos de forma horizontal */
   justify-content: center;
   /* justify-content: space-between; */
@@ -30,6 +30,10 @@
   flex-direction: row;
   /* gap = brecha, separación  */
   gap:20px;
+  /* wrap hace que los elementos hijos no modifiquen su tamaño si el contenedor es ó se vuelve pequeño */
+  /* flex-wrap: wrap; */
+  /* con nowrap los elementos hijos cambiarán su tamaño y no "colapsaran" a la parte inferior */
+  flex-wrap: nowrap;
 }
 
 .hijo {
