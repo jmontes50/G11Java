@@ -24,7 +24,22 @@ h1, h2, h3, h4, h5, h6 {
   margin:0 auto;
 }
 
+.cabecera {
+  padding:96px 0;
+  /* text-center alinea SOLO texto de forma horizontal */
+  text-align: center;
+}
+
+.oferta {
+  font-size:12px;
+  background-color: lightgray;
+  padding:3px;
+  /* indica el redondeado de un borde */
+  border-radius: 50px;
+}
+
 .rectangulo-header {
   /* las unidades porcentuales suelen tomar el elemento padre como referencia, en este caso header */
   width: 100%;
 }
+
