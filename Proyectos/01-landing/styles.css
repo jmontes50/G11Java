@@ -16,6 +16,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
   font-weight: 300;
 }
+/* reseteando estilos de ul y a */
+a {
+  text-decoration: none;
+  /* inherit -> heredado, vamos a tomar el color heredado de un elemento padre */
+  color:inherit;
+}
+
+ul {
+  list-style: none;
+}
 
 /* vamos a usarlo para centrar contenido */
 .contenedor {
