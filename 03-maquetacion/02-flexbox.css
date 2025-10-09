@@ -9,6 +9,19 @@
   width: 600px;
   background-color: lightblue;
   border:2px solid blue;
+  /* flex trabaja desde el elemento padre */
+  display: flex;
+
+  /* va a permitirnos alinear los elementos de forma horizontal */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
+
+  /* para alinear de forma vertical */
+  align-items: center;
+  /* align-items: flex-end; */
+  /* align-items: stretch; */
 }
 
 .hijo {
@@ -17,3 +30,4 @@
   background-color: coral;
   border:2px solid red;
 }
+
