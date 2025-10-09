@@ -38,8 +38,44 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
 }
 
+.main-title {
+  font-size:72px;
+  /* verticalmente lo usual es aplicarlo o arriba o abajo pero no los dos, al menos no en múñtiples elementos */
+  margin-top: 20px;
+  /* los margenes verticales no se apilan uno encima de otro, más bien da la sensación de solaparse */
+  /* margin-bottom: 20px; */
+}
+
+.text-marketing {
+  color:gray;
+  font-size:20px;
+  margin-top:20px;
+}
+
+.call-to-action {
+  margin-top: 30px;
+}
+
+/* con esta clase damos la forma */
+.btn {
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin-left:10px;
+}
+
+.btn-white {
+  border-color: black;
+  font-weight: 500;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+
 .rectangulo-header {
   /* las unidades porcentuales suelen tomar el elemento padre como referencia, en este caso header */
   width: 100%;
+  margin-top: 64px;
 }
 
