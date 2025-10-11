@@ -1,0 +1,24 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: red;
+}
+
+/* MEDIA QUERIES */
+/* mediomultimedia -> screen, tv, print */
+/* @media <mediomultimedia> and (<condicional/breakpoint>) {}*/
+
+@media screen and (width >= 1024px) {
+  header {
+    color: blue;
+    font-size: 36px;
+    border:2px solid red;
+  }
+}
