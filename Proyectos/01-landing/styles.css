@@ -185,3 +185,28 @@ ul {
   border-top-right-radius:10px;
   border-bottom-right-radius:10px;
 }
+
+/* MEDIA QUERIES */
+/* el tamaño de texto predeterminado a excepción de títulos h1,h2... es de 16px */
+@media (width <= 480px) {
+  .cabecera {
+    padding: 48px;
+  }
+
+  .main-title {
+    font-size: 48px;
+    padding: 16px;
+  }
+
+  .text-marketing {
+    font-size: 16px;
+    padding: 16px;
+    /* text-align: left; */
+  }
+
+  .btn {
+    padding: 10px 14px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
