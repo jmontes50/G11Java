@@ -148,3 +148,23 @@ ul {
   color:steelblue;
   margin: 24px 0 32px 0;
 }
+
+.data {
+  padding:48px;
+}
+
+.title-data {
+  font-size:48px;
+  margin-bottom: 20px;
+}
+
+.table-workspace {
+  width: 100%;
+  /* quita el espaciado entre td's */
+  border-collapse: collapse;
+}
+
+.table-workspace td {
+  /* border:1px solid black; */
+  padding: 16px;
+}
