@@ -168,3 +168,20 @@ ul {
   /* border:1px solid black; */
   padding: 16px;
 }
+
+/* espacio aplica para elementos hijos */
+/* De tablework-space tendrá elementos hijos que son tr tomamos los impares (odd) y dentro de esos tr buscamos los td que son hijos*/
+.table-workspace tr:nth-of-type(odd) td{
+  background-color: gold;
+  /* border-radius: 40px; */
+}
+
+.table-workspace tr:nth-of-type(odd) td:first-child {
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+}
+
+.table-workspace tr:nth-of-type(odd) td:last-child {
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+}
