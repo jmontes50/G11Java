@@ -1,0 +1,36 @@
+/* css */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  max-width: 1400px;
+  margin:0 auto;
+  margin-top:96px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fotos {
+  margin:0 auto;
+  display: grid;
+  gap:10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+}
+
+.fotos img {
+  width:100%;
+  object-fit: cover;
+}
+
+@media screen and (width <= 768px) {
+  .fotos {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 200px);
+  }
+}
