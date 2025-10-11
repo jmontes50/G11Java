@@ -11,6 +11,10 @@ header {
   color: red;
 }
 
+h2 {
+  background-color: aqua;
+}
+
 /* MEDIA QUERIES */
 /* mediomultimedia -> screen, tv, print */
 /* @media <mediomultimedia> and (<condicional/breakpoint>) {}*/
@@ -20,5 +24,22 @@ header {
     color: blue;
     font-size: 36px;
     border:2px solid red;
+  }
+
+  h2 {
+    background-color: peru;
+    color:yellow;
+  }
+}
+
+@media (width <= 480px) {
+  header {
+    color: green;
+    background-color: greenyellow;
+  }
+
+  p {
+    font-size: 20px;
+    color: red;
   }
 }
