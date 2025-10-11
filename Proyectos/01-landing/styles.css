@@ -118,15 +118,15 @@ ul {
 
 /* questions */
 .questions {
-  height: 500px;
+  height: 450px;
   margin-bottom: 96px;
   display: flex;
+  gap:40px;
 }
 
 .question-title {
   font-size: 54px;
 }
-
 .question-orange {
   /* -top -bottom -left -right */
   border-top: 4px solid orangered;
@@ -138,3 +138,13 @@ ul {
   margin: 24px 0 32px 0;
 }
 
+.question-blue {
+  border-top: 4px solid steelblue;
+  padding-top: 24px;
+  align-self: flex-end;
+}
+
+.question-blue > i {
+  color:steelblue;
+  margin: 24px 0 32px 0;
+}
