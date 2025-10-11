@@ -43,3 +43,25 @@ h2 {
     color: red;
   }
 }
+
+/* los media queries
+se sugiere implementar de dos maneras*/
+
+/* MÉTODO 1 */
+/* estilos generales orientados a desktop */
+
+/* Y al final media queries */
+
+/* MÉTODO 2*/
+/* tener media queries por bloques junto a otros selectores */
+
+/* .navbar {
+      background-color: blue;
+    }
+
+    @media (width <= 480px) {
+      .navbar {
+        background-color: green;
+      }
+    }
+*/
