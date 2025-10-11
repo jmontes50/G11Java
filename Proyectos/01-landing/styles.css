@@ -115,3 +115,26 @@ ul {
 .btn-sm {
   padding: 8px 15px;
 }
+
+/* questions */
+.questions {
+  height: 500px;
+  margin-bottom: 96px;
+  display: flex;
+}
+
+.question-title {
+  font-size: 54px;
+}
+
+.question-orange {
+  /* -top -bottom -left -right */
+  border-top: 4px solid orangered;
+  padding-top: 24px;
+}
+
+.question-orange > i {
+  color:orangered;
+  margin: 24px 0 32px 0;
+}
+
