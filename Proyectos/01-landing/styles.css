@@ -148,7 +148,7 @@ ul {
   color:steelblue;
   margin: 24px 0 32px 0;
 }
-
+/* data */
 .data {
   padding:48px;
 }
@@ -226,4 +226,18 @@ ul {
   .questions i {
     margin: 16px 0 20px 0;
   }
+
+  /* data */
+  .data {
+    width: 100%;
+    border:4px solid red;
+    /* overflow funciona en el eje x y y */
+    overflow-x: scroll;
+  }
+
+  .table-workspace {
+    /* ancho que se adecuado para el contenido que tiene */
+    width: 800px;
+  }
+
 }
