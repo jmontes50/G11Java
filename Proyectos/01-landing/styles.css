@@ -209,4 +209,21 @@ ul {
     font-size: 14px;
     margin-bottom: 10px;
   }
+  /* questions */
+  .questions {
+    flex-direction: column;
+    /* fit-content que se ajuste al contenido */
+    height:fit-content;
+    margin-bottom: 30px;
+    gap:24px;
+    padding:0 20px;
+  }
+
+  .question-title {
+    font-size: 36px;
+  }
+
+  .questions i {
+    margin: 16px 0 20px 0;
+  }
 }
