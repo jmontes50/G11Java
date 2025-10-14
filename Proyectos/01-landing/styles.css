@@ -186,6 +186,15 @@ ul {
   border-bottom-right-radius:10px;
 }
 
+/* es para desktop */
+#check-menu {
+  visibility: hidden;
+}
+
+.open-menu, .close-menu {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 /* el tamaño de texto predeterminado a excepción de títulos h1,h2... es de 16px */
 @media (width <= 480px) {
@@ -238,6 +247,23 @@ ul {
   .table-workspace {
     /* ancho que se adecuado para el contenido que tiene */
     width: 800px;
+  }
+
+  .open-menu, .close-menu {
+    display: block;
+  }
+
+  .links {
+    background-color: yellow;
+    flex-direction: column;
+    position: fixed;
+    padding:40px;
+    top:0;
+    gap:40px;
+    /* vw - viewport unit */
+    width:100vw;
+    /* vh - viewport height */
+    height: 100vh;
   }
 
 }
