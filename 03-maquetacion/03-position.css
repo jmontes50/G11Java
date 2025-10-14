@@ -10,6 +10,8 @@
   width:300px;
   height:1300px;
   margin: 30px;
+  /* los position relative funcionan como referencia para los absolute, un elemento con absolute buscará un elemento con relative "superior" */
+  position: relative;
 
 }
 div {
@@ -22,6 +24,11 @@ div {
 }
 .caja-absolute {
   background-color: orangered;
+  position: absolute;
+  /* el resto de elementos toma a los elementos con absolute como si no existieran */
+  top:200px;
+  /* left: 100px; */
+  right: -20px;
 }
 .caja-extra {
   background-color: cyan;
