@@ -1,0 +1,20 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.circulo {
+  background-color: chocolate;
+  padding:50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.rectangulo {
+  width: 400px;
+  height: 200px;
+  background-color: darkcyan;
+  border:2px solid steelblue;
+}
