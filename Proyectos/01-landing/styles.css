@@ -259,6 +259,7 @@ ul {
     position: fixed;
     padding:40px;
     top:0;
+    right: -100vw;
     gap:40px;
     /* vw - viewport unit */
     width:100vw;
@@ -266,4 +267,11 @@ ul {
     height: 100vh;
   }
 
+  #check-menu:checked ~ .links {
+    right:0;
+  }
+
+  .navbar {
+    padding:30px;
+  }
 }
