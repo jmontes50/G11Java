@@ -10,6 +10,19 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  /* TRANSICIONES */
+  /* all hace referencia a todas las props */
+  transition-property: all;
+  transition-duration: 500ms;
+  /* https://cubic-bezier.com/#.17,.67,.83,.67 */
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+
+.circulo:hover {
+  background-color: dodgerblue;
+  color: white;
+
 }
 
 .rectangulo {
