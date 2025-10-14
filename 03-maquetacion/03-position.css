@@ -42,4 +42,7 @@ div {
 }
 .caja-sticky {
   background-color: steelblue;
+  /* se "pega" cuando el usuario hace scroll y se desplaza sobrepasando su posición original */
+  position: sticky;
+  top: 20px;
 }
