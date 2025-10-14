@@ -17,7 +17,7 @@
   transition-duration: 300ms;
   /* https://cubic-bezier.com/#.17,.67,.83,.67 */
   transition-timing-function: ease-in-out;
-  transition-delay: 1s;
+  /* transition-delay: 1s; */
 }
 
 .circulo:hover {
@@ -31,4 +31,6 @@
   height: 200px;
   background-color: darkcyan;
   border:2px solid steelblue;
+  /* rotate rota, scale cambia el tamaño escala el elemento, translate mueve en un eje X y Y, skew tuerce el elemento */
+  transform: rotate(-45deg) scale(1.4) translate(50px, 75px) skew(30deg);
 }
