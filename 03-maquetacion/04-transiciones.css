@@ -13,7 +13,8 @@
   /* TRANSICIONES */
   /* all hace referencia a todas las props */
   transition-property: all;
-  transition-duration: 500ms;
+  /* como regla las transiciones no deben durar más de 300ms */
+  transition-duration: 300ms;
   /* https://cubic-bezier.com/#.17,.67,.83,.67 */
   transition-timing-function: ease-in-out;
   transition-delay: 1s;

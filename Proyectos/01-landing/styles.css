@@ -265,6 +265,9 @@ ul {
     width:100vw;
     /* vh - viewport height */
     height: 100vh;
+    /* transiciones */
+    transition-property: all;
+    transition-duration: 300ms;
   }
 
   #check-menu:checked ~ .links {
