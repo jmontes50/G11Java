@@ -10,4 +10,23 @@ body {
   width:100px;
   border-radius: 50%;
   background-color: deepskyblue;
+  /*cuan transparente es algo*/
+  /* opacity: 0.5;  */
+  animation-name: cargando;
+  animation-duration: 4s;
+}
+
+@keyframes cargando {
+  /* vamos a indicar porcentajes */
+  0% {
+    /* opacidad tiene un valor decimal, 1 = 100% */
+    opacity: 0; /* es totalmente transparente*/
+    /* translateY, mueve algo solo en el eje Y (vertical) */
+    transform: scale(0.5) translateY(0);
+  }
+
+  50% {
+    opacity: 1; /* no es transparente para nada*/
+    transform: scale(1) translateY(0);
+  }
 }
