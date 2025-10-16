@@ -3,7 +3,7 @@
   padding:0;
   box-sizing: border-box;
   /* temporal */
-  border:2px solid red;
+  /* border:2px solid red; */
 }
 
 .contenedor {
@@ -24,6 +24,9 @@
   /* filter: sepia(1); */
   /* filter: grayscale(1); */
   filter:blur(1px); /* desenfocate 1 px*/
+  /* animación */
+  animation-name: entrada;
+  animation-duration: 500ms;
 }
 
 .cuadro:hover {
