@@ -15,13 +15,16 @@ body {
 }
 
 .box1 {
-
+  /* hexadecimales 0 a F */
+  /* PARES, #RRGGBB */
+  background-color: #4F6Aff;
 }
 
 .box2 {
-
+  /* R, G, B, 0 A 255 Y El alpha */
+  background-color: rgba(100, 100, 255, 0.5);
 }
 
-.box3 {
-
+.box3 { /*matiz saturacion brillo */
+  background-color: hsl(90, 75%, 90%);
 }
