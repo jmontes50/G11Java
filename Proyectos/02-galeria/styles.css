@@ -21,11 +21,15 @@
 .cuadro {
   position: relative;
   transition-duration: 300ms;
+  /* filter: sepia(1); */
+  /* filter: grayscale(1); */
+  filter:blur(1px); /* desenfocate 1 px*/
 }
 
 .cuadro:hover {
   box-shadow:0 0 10px black;
   transform: translate(0, 5px) scale(1.03) rotate(0.5deg);
+  filter: blur(0);/* no te desenfoques*/
 }
 
 .cuadro span {
