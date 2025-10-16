@@ -20,6 +20,12 @@
 
 .cuadro {
   position: relative;
+  transition-duration: 300ms;
+}
+
+.cuadro:hover {
+  box-shadow:0 0 10px black;
+  transform: translate(0, 5px) scale(1.03) rotate(0.5deg);
 }
 
 .cuadro span {
