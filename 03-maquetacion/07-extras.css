@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 16px es la unidad x defecto */
+  font-size: 16px;
+}
+
 body {
   background-color: gold;
 }
@@ -27,4 +32,29 @@ body {
 
 .box3 { /*matiz saturacion brillo */
   background-color: hsl(90, 75%, 90%);
+}
+
+/* medidas */
+.contenedor {
+  font-size: 1rem;
+  /* rem valor más lejano el html */
+  /* normal: 16px * 1 */
+}
+
+.tarjeta {
+  margin: 20px; /*20px * 2*/
+  padding: 2em;
+ /* padding: 40px;  2 x 20*/
+  background-color: #ffffff;
+  font-size: 1.25rem; /*16 * 1.25 = 20px*/
+  border-radius: 0.5rem; /*8px*/
+}
+.tarjeta h2 {
+  margin-bottom: 0.5em; /*10px*/
+}
+
+@media (width <= 420px) {
+  html {
+    font-size: 12px;
+  }
 }
