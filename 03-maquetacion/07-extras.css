@@ -1,0 +1,27 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gold;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.box1 {
+
+}
+
+.box2 {
+
+}
+
+.box3 {
+
+}
