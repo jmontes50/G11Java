@@ -78,3 +78,21 @@
   grid-row: 4 / 5;
 }
 
+/* animaciones */
+
+@keyframes entrada {
+  0% {
+    /* no se va a ver la imagen */
+    transform: scale(0);
+  }
+
+  70% {
+    /* se verán un poco más grandes */
+    transform: scale(1.05);
+  }
+
+  100% {
+    /* se ve normal */
+    transform: scale(1);
+  }
+}
