@@ -8,7 +8,7 @@
   background-color: lightblue;
   height: 100vh;
   display: grid;
-
+  /* GRID EXPLÍCITO */
   /* grid-template-columns: 300px 300px 300px; */
   /* grid-template-columns: repeat(4, 200px); */
   /* fr -> freespace */
@@ -17,12 +17,15 @@
   grid-template-rows: repeat(4, 200px);
   /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   gap: 20px;
-
+  /* GRID IMPLÍCITO, contenido dínamico */
+  grid-auto-columns: 250px;
+  grid-auto-rows: 275px;
+  /* el grid-auto-flow indica donde se ubicarán los nuevos elementos del grid implícito */
+  grid-auto-flow: row;
 }
 
 .item {
   background-color: coral;
-  border:2px solid red;
 }
 
 .item1 {
