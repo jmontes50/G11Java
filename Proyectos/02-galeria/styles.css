@@ -18,6 +18,21 @@
   grid-template-rows: repeat(4, minmax(150px, 1fr));
 }
 
+.cuadro {
+  position: relative;
+}
+
+.cuadro span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  /* dar sombra a las imágenes, despX, despY, blur, color */
+  text-shadow: 2px 2px 4px black;
+}
+
 .cuadro img {
   /* en este caso las unidades % toman de referencia al padre para el width, height */
   width: 100%;
