@@ -11,6 +11,7 @@ if (10 > 50) {
 let edad = prompt("Cúal es tu edad");
 // console.log(edad);
 // console.log(typeof edad);
+//Number busca convertir el parámetro recibido a un número
 let numberEdad = Number(edad);
 // let numberEdad = +(edad);
 // console.log(numberEdad);
@@ -56,4 +57,14 @@ if(creditos === 100) {
   console.log("tienes el número de créditos correcto");
 } else {
   console.log("NO tienes el número de créditos");
+}
+
+//falsy,recordemos que ! niega
+// if(!undefined) {
+// if(!0) {
+// if(!"") {
+// if(!null) {
+if(!("patatas"/100)) {
+  console.log("patatas"/100); //NaN Not a Number
+  console.log("Es falso/falsy");
 }
