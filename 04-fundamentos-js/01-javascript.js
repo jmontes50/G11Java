@@ -56,5 +56,7 @@ console.log("parseInt:", parseInt(cantidad) + 75);
 //ParseFloat, cambiar a un número de punto flotante (decimal)
 console.log("parseFloat:", parseFloat(cantidad) + 75);
 
-//Solución para concantenar, template literals
-
+//Solución para concantenar, template literals (`` backticks)
+console.log(`Juan al llegar trajo
+${cantidad} cajas por un total de
+${Number(cantidad) * 50} USD`);
