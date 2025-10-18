@@ -44,3 +44,16 @@ if(rol == "admin" || rol == "supervisor") {
 } else {
   console.log("Rol incorrecto, verificar por favor");
 }
+
+//IMPORTANTE
+let creditos = prompt("De cuantos créditos dispones?");
+
+console.log(creditos)
+
+//el == va a evaluar SOLO el valor
+//el === va a evaluar el valor Y el tipo de dato
+if(creditos === 100) {
+  console.log("tienes el número de créditos correcto");
+} else {
+  console.log("NO tienes el número de créditos");
+}
