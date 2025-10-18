@@ -68,3 +68,9 @@ if(!("patatas"/100)) {
   console.log("patatas"/100); //NaN Not a Number
   console.log("Es falso/falsy");
 }
+
+//Operadores ternarios
+//expresión_A_evaluar ? return_si_es_true : return_si_es_false
+let esTruthy = 10 < 200 ? "Es verdaderooo" : "Es falsooo";
+
+console.log(esTruthy);
