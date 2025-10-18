@@ -61,12 +61,35 @@ console.log(`Juan al llegar trajo
 ${cantidad} cajas por un total de
 ${Number(cantidad) * 50} USD`);
 
-//operaciones aritméticos
+//operaciones aritméticas
 console.log("suma:", 10 + 20);
 console.log("resta:", 10 - 20);
 console.log("multiplicación:", 10 * 20);
 console.log("división:", 200 / 5);
 console.log("módulo/residuo:", 203 % 5);
 
+//operadores aritméticos
+let a = 10;
+// a = a + 1;
+a++;
+console.log(a);
 
+let b = 10;
+// b = b - 1;
+b--;
+console.log(b);
 
+let c = 100;
+// c = c + 7;
+c+=7;
+console.log(c);
+
+let x = 20;
+// x = x * 3;
+x*=3;
+console.log(x)
+
+let y = 90;
+// y = y / 2;
+y/=2;
+console.log(y)
