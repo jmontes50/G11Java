@@ -48,5 +48,7 @@ console.log(cantidad * 20);
 // Aunque podemos utilizar + para concatenar podemos tener problemas al concatenar con números
 console.log("Juan " + "Perez")
 console.log(cantidad + 75);
+// cambiarle el tipo
+console.log(Number(cantidad) + 75);
 
 //en unos momentos lo solucionamos
