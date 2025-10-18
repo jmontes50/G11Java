@@ -60,3 +60,13 @@ console.log("parseFloat:", parseFloat(cantidad) + 75);
 console.log(`Juan al llegar trajo
 ${cantidad} cajas por un total de
 ${Number(cantidad) * 50} USD`);
+
+//operaciones aritméticos
+console.log("suma:", 10 + 20);
+console.log("resta:", 10 - 20);
+console.log("multiplicación:", 10 * 20);
+console.log("división:", 200 / 5);
+console.log("módulo/residuo:", 203 % 5);
+
+
+
