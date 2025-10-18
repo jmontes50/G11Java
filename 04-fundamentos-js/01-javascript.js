@@ -48,7 +48,13 @@ console.log(cantidad * 20);
 // Aunque podemos utilizar + para concatenar podemos tener problemas al concatenar con números
 console.log("Juan " + "Perez")
 console.log(cantidad + 75);
-// cambiarle el tipo
-console.log(Number(cantidad) + 75);
+// cambiar el tipo de dato
+//Number
+console.log("Number", Number(cantidad) + 75);
+//ParseInt, parsear a un Entero
+console.log("parseInt:", parseInt(cantidad) + 75);
+//ParseFloat, cambiar a un número de punto flotante (decimal)
+console.log("parseFloat:", parseFloat(cantidad) + 75);
 
-//en unos momentos lo solucionamos
+//Solución para concantenar, template literals
+
