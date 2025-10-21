@@ -4,7 +4,7 @@ let perro = {
   nombre: "Luna",
   edad: 4,
   color: "Blanco/Negro",
-  amigable: true,
+  amigable: false,
   //método
 
   ladrar: function(){
@@ -37,11 +37,27 @@ console.table(perro2);
 //como acceder a propiedades
 console.log("Nombre:",perro.nombre); //sintaxis de punto
 
-let nombrePropiedad = "amigable"
+let nombrePropiedad = "amigable";
 
-console.log("Amigable:",perro2[nombrePropiedad]); //sintaxis de corchetes
+console.log("Amigable:",perro[nombrePropiedad]); //sintaxis de corchetes
 
 console.log("Vacunado:",perro2["vacunado-2025"]); //sintaxis de corchetes
+
+//Desestructuración, aplicamos para no repetir perro. perro.
+//pero necesitamos saber los nombres de las propiedades
+
+let { edad, color, nombre, } = perro;
+
+console.log(edad);
+console.log(color);
+console.log(nombre);
+
+let { edad:edad2, color:color2, nombre:name2, } = perro2;
+
+console.log(edad2);
+console.log(color2);
+console.log(name2);
+
 
 //usando métodos
 perro.ladrar();
