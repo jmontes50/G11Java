@@ -15,6 +15,7 @@ let resta = function (a, b) {
 console.log(resta(50, 20));
 
 function operacion (a, b, tarea) {
+  console.log("Esto es tarea:", tarea);
   return tarea(a, b); //función
 }
 
