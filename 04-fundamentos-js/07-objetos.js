@@ -25,6 +25,7 @@ let perro2 = {
   color: "Negro",
   amigable: true,
   "vacunado-2025": true,
+  "tiene-chip": "Si tiene, 1234567",
   dormir () {
     console.log("zzzz")
   },
@@ -39,6 +40,7 @@ console.log("Nombre:",perro.nombre); //sintaxis de punto
 let nombrePropiedad = "amigable"
 
 console.log("Amigable:",perro2[nombrePropiedad]); //sintaxis de corchetes
+
 console.log("Vacunado:",perro2["vacunado-2025"]); //sintaxis de corchetes
 
 //usando métodos
