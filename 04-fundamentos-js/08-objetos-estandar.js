@@ -63,4 +63,5 @@ console.log(tiempoHastaHalloween);
 
 let diasHalloween = tiempoHastaHalloween / 1000 / 60 / 60 / 24;
 
-console.log(diasHalloween)
+console.log(diasHalloween);
+
