@@ -40,3 +40,16 @@ let gato2 = {
 }
 
 console.log(gato1 === gato2);
+
+//spread operator, sirve para hacer una copia por valor de un objeto
+let gato3 = { ...gato1 };
+
+gato3.nombre = "Mandy";
+
+console.log(gato3);
+
+let gato4 = { ...gato1, color: "Negro" }
+
+console.log(gato4)
+
+console.log("gato 1",gato1);
