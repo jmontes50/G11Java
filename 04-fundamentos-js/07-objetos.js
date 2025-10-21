@@ -58,8 +58,23 @@ console.log(edad2);
 console.log(color2);
 console.log(name2);
 
-
 //usando métodos
 perro.ladrar();
 
 perro2.dormir();
+
+//Aplicar desestructuración en los parámetros
+let registrarMascota = ({ nombre, edad, color, amigable }) => {
+  console.log(`La mascota ${nombre} de ${edad} y color ${color} es ${amigable}`);
+}
+
+let nuevaMascota = {
+  edad:3,
+  nombre:"Rubí",
+  peso:6,
+  amigable:false,
+  color:"blanca",
+}
+
+// registrarMascota("Rubí", 3, "blanca", false);
+registrarMascota(nuevaMascota)
