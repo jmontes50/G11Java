@@ -24,6 +24,7 @@ let perro2 = {
   edad: 5,
   color: "Negro",
   amigable: true,
+  "vacunado-2025": true,
   dormir () {
     console.log("zzzz")
   },
@@ -32,9 +33,15 @@ let perro2 = {
 console.log(perro);
 
 console.table(perro2);
+//como acceder a propiedades
+console.log("Nombre:",perro.nombre); //sintaxis de punto
 
-console.log(perro.nombre);
+let nombrePropiedad = "amigable"
 
+console.log("Amigable:",perro2[nombrePropiedad]); //sintaxis de corchetes
+console.log("Vacunado:",perro2["vacunado-2025"]); //sintaxis de corchetes
+
+//usando métodos
 perro.ladrar();
 
 perro2.dormir();
