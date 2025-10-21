@@ -77,4 +77,4 @@ let nuevaMascota = {
 }
 
 // registrarMascota("Rubí", 3, "blanca", false);
-registrarMascota(nuevaMascota)
+registrarMascota(nuevaMascota);
