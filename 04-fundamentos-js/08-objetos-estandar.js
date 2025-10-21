@@ -31,3 +31,36 @@ console.log("Random:", Math.random()); //un número aleatorio entre 0 y 1
 console.log("PI", Math.PI);
 
 console.log("Euler:", Math.E);
+
+//-----------Objeto Date-----------------------
+let hoy = new Date();
+
+console.log("Hoy", hoy);
+
+let halloween = new Date("2025-10-31");
+
+console.log(halloween);
+
+console.log(hoy.getFullYear());
+
+console.log(hoy.getMonth()); //JS cuenta los meses desde 0, 0 es Enero
+
+console.log(hoy.getDay());
+
+console.log(hoy.getTime()); //timestamp, t milisegundos a partir de 01 Enero 70
+//use nTimestamp
+let timestampHoy = hoy.getTime();
+
+let timestampHalloween = halloween.getTime();
+
+console.log(timestampHoy)
+
+console.log(timestampHalloween)
+
+let tiempoHastaHalloween = timestampHalloween - timestampHoy
+
+console.log(tiempoHastaHalloween);
+
+let diasHalloween = tiempoHastaHalloween / 1000 / 60 / 60 / 24;
+
+console.log(diasHalloween)
