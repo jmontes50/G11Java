@@ -32,4 +32,15 @@ numeros.shift(); //remover del inicio 01 item
 
 console.table(numeros); //console muy util con arrays
 
-console.log(numeros.length);
+console.log("longitud:", numeros.length);
+console.log(typeof numeros.length)
+
+for(let i = 0; i < numeros.length; i++){
+  console.log(i);
+}
+
+let frutas = ["Kiwi", "Piña", "Naranja", "Coco"];
+
+for(let fruta of frutas) {
+  console.log(fruta);
+}
