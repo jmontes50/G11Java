@@ -17,3 +17,17 @@ console.log(frase.toUpperCase());
 console.log(frase.toLowerCase());
 
 console.log(frase.includes("gato"));
+
+//-----------Objeto Math ---------------------
+//Math no tine que ser instanciado, como una clase con métodos estáticos
+console.log("Round:", Math.round(2.4)); //.5 redondea para arriba
+
+console.log("Ceil:", Math.ceil(2.1));
+
+console.log("Floor:", Math.floor(2.9));
+
+console.log("Random:", Math.random()); //un número aleatorio entre 0 y 1
+
+console.log("PI", Math.PI);
+
+console.log("Euler:", Math.E);
