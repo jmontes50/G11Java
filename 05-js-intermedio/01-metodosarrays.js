@@ -15,9 +15,24 @@ frutas.forEach((fru, index, arreglo) => {
   console.log(arreglo); //el array original
 })
 
-//Map, a partir de un arreglo me permite transformarlo y obtener otro arreglo ya transformado
+//Map, a partir de un arreglo me permite transformarlo y obtener otro arreglo nuevo! ya transformado
 let frutasMayusculas = frutas.map((fru, index) => {
   return `${index + 1}. ${fru.toUpperCase()}`; //1. FRUTA
 })
 
+console.log("Original", frutas);
 console.log("Map: ", frutasMayusculas);
+
+//---------------------------------------------
+let productos = [
+  { nombre: "Mouse", precio: 40 },
+  { nombre: "Teclado", precio: 50},
+  { nombre: "USB", precio: 15}
+]
+
+//Filter, permite filtrar en base a una expresión items de un array
+//vamos a recorrer item x item (prod)
+let productosFiltrados = productos.filter((prod, index) => {
+  return prod.precio < 45;
+})
+console.log("Filter: ", productosFiltrados);
