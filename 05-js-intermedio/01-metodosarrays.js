@@ -15,7 +15,7 @@ frutas.forEach((fru, index, arreglo) => {
   console.log(arreglo); //el array original
 })
 
-//Map, transformar
+//Map, a partir de un arreglo me permite transformarlo y obtener otro arreglo ya transformado
 let frutasMayusculas = frutas.map((fru, index) => {
   return `${index + 1}. ${fru.toUpperCase()}`; //1. FRUTA
 })
