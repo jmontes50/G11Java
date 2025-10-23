@@ -11,11 +11,9 @@ let carrito = [];
 
 
 let agregarAlCarrito = (producto, cantidad) => {
-  let nuevoProducto2 = { ...producto, cantidad };
-  console.table(nuevoProducto2);
-
-
-  return;
+  //copia del objeto agregando cantidad
+  // let nuevoProducto2 = { ...producto, cantidad };
+  // console.table(nuevoProducto2);
   let { nombre, precio } = producto; //desestructuración
   let nuevoProducto = {
     //nombre: nombreProducto, ahi si colocamos 2 puntos
@@ -39,9 +37,31 @@ let mostrarProductos = () => {
     if(agregar) { //si es que deseamos agregar el producto
       let cantidad = Number(prompt("Cuál es la cantidad que deseas comprar?"));
       console.log({ cantidad });
-      agregarAlCarrito(prod, cantidad);
+      if(cantidad <= prod.stock){ //si es que la cantidad a comprar es menor al stock actual del producto
+        agregarAlCarrito(prod, cantidad);
+      }else{
+        console.log(`No se puede agregar ${prod.nombre}`);
+      }
     }
   }
 }
 
 mostrarProductos();
+
+
+
+
+
+
+
+
+//rest parameters
+/**
+ * let miFuncion = (a, b, ...rest) => {
+  console.log(a)
+  console.log(b)
+  console.log(rest)
+}
+
+miFuncion(10, 20, 30, 40, 50, 60, 100)
+ */
