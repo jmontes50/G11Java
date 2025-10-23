@@ -36,3 +36,12 @@ let productosFiltrados = productos.filter((prod, index) => {
   return prod.precio < 45;
 })
 console.log("Filter: ", productosFiltrados);
+
+let edades = [20, 18, 30, 17, 40, 45];
+
+//sort
+// let edadesOrdenadas = edades.sort();
+//No utilizemos .sort() en vez utilicemos .toSorted();
+let edadesOrdenadas = edades.toSorted();
+console.log("edades original: ", edades);
+console.log("sort: ", edadesOrdenadas);
