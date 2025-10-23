@@ -45,3 +45,13 @@ let edades = [20, 18, 30, 17, 40, 45];
 let edadesOrdenadas = edades.toSorted();
 console.log("edades original: ", edades);
 console.log("sort: ", edadesOrdenadas);
+
+//reduce
+let sumaEdades = edades.reduce((acumulador, item) => {
+  console.log({ acumulador });
+  console.log({ item });
+
+  return acumulador + item;
+})
+
+console.log({ sumaEdades });
