@@ -11,6 +11,11 @@ let carrito = [];
 
 
 let agregarAlCarrito = (producto, cantidad) => {
+  let nuevoProducto2 = { ...producto, cantidad };
+  console.table(nuevoProducto2);
+
+
+  return;
   let { nombre, precio } = producto; //desestructuración
   let nuevoProducto = {
     //nombre: nombreProducto, ahi si colocamos 2 puntos
@@ -20,9 +25,9 @@ let agregarAlCarrito = (producto, cantidad) => {
     precio,
     cantidad
   }
-  console.table(nuevoProducto);
-  // carrito.push(nuevoProducto);
-  // console.table(carrito);
+  carrito.push(nuevoProducto);
+  console.log("Observando carrito...");
+  console.table(carrito);
 }
 
 //función flecha
