@@ -5,7 +5,10 @@ let productos = [
   { nombre: "Zapatillas", precio: 60, stock: 2 },
 ];
 
+//NT: si desean usar una referencia tenemos que asegurarnos que esa referencia exista antes de invocarla.
+
 let carrito = [];
+
 
 let agregarAlCarrito = (nuevoProducto) => {
   carrito.push(nuevoProducto);
@@ -15,10 +18,12 @@ let agregarAlCarrito = (nuevoProducto) => {
 //función flecha
 let mostrarProductos = () => {
   for(let prod of productos){
-    console.log(prod)
+    console.log(prod);
     let agregar = confirm(`Desea agregar ${prod.nombre} al carrito de compras?`); //boolean
-    console.log(agregar)
-    if(agregar) {
+    console.log({ agregar })
+    if(agregar) { //si es que deseamos agregar el producto
+      let cantidad = Number(prompt("Cuál es la cantidad que deseas comprar?"));
+      console.log({ cantidad });
       agregarAlCarrito(prod);
     }
   }
