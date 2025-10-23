@@ -55,3 +55,24 @@ let sumaEdades = edades.reduce((acumulador, item) => {
 })
 
 console.log({ sumaEdades });
+
+/**
+ * let productos = [
+  { nombre: "Mouse", precio: 40 },
+  { nombre: "Teclado", precio: 50},
+  { nombre: "USB", precio: 15}
+]
+ */
+
+//reduce con objetos
+//reduce toma como valir inicial de acumulador el primer item que tenga
+//si es algo incorrecto lo tomará de todas maneras
+let totalAPagar = productos.reduce((acumulador, prod) => {
+  console.log({ acumulador });
+  console.log(prod.precio);
+  return acumulador + prod.precio;
+  //el segundo argumento que puede recibir reduce es el valor inicial del acumulador
+}, 0)
+
+//nos aparecerá [object Object] cuando estemos realizando una operación valida pero con objetos
+console.log(totalAPagar);
