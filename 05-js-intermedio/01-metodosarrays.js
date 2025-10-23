@@ -14,3 +14,10 @@ frutas.forEach((fru, index, arreglo) => {
   console.log(index); //la posición/indice de cada item
   console.log(arreglo); //el array original
 })
+
+//Map, transformar
+let frutasMayusculas = frutas.map((fru, index) => {
+  return `${index + 1}. ${fru.toUpperCase()}`; //1. FRUTA
+})
+
+console.log("Map: ", frutasMayusculas);
