@@ -7,10 +7,20 @@ let productos = [
 
 let carrito = [];
 
+let agregarAlCarrito = (nuevoProducto) => {
+  carrito.push(nuevoProducto);
+  console.table(carrito);
+}
+
 //función flecha
 let mostrarProductos = () => {
   for(let prod of productos){
     console.log(prod)
+    let agregar = confirm(`Desea agregar ${prod.nombre} al carrito de compras?`); //boolean
+    console.log(agregar)
+    if(agregar) {
+      agregarAlCarrito(prod);
+    }
   }
 }
 
