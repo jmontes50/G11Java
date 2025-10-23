@@ -10,21 +10,31 @@ let productos = [
 let carrito = [];
 
 
-let agregarAlCarrito = (nuevoProducto) => {
-  carrito.push(nuevoProducto);
-  console.table(carrito);
+let agregarAlCarrito = (producto, cantidad) => {
+  let { nombre, precio } = producto; //desestructuración
+  let nuevoProducto = {
+    //nombre: nombreProducto, ahi si colocamos 2 puntos
+    //si el valor tiene el mismo nombre que la propiedad, podemos quedarnos con uno solo,
+    //nombre:nombre, //claridad en el código
+    nombre,
+    precio,
+    cantidad
+  }
+  console.table(nuevoProducto);
+  // carrito.push(nuevoProducto);
+  // console.table(carrito);
 }
 
 //función flecha
 let mostrarProductos = () => {
   for(let prod of productos){
     console.log(prod);
-    let agregar = confirm(`Desea agregar ${prod.nombre} al carrito de compras?`); //boolean
-    console.log({ agregar })
+    let agregar = confirm(`Desea agregar ${prod.nombre} al carrito de compras?`); //es la ventanita que nos pregunta para confirmar y da un booleano
+    console.log({ agregar });
     if(agregar) { //si es que deseamos agregar el producto
       let cantidad = Number(prompt("Cuál es la cantidad que deseas comprar?"));
       console.log({ cantidad });
-      agregarAlCarrito(prod);
+      agregarAlCarrito(prod, cantidad);
     }
   }
 }
