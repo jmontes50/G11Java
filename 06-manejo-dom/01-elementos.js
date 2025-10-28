@@ -86,3 +86,13 @@ piePagina.innerHTML = `
   <p>Soy un párrafo</p>
   <p>Soy un párrafo</p>
 `
+
+const personas = ["Juan Perez", "Victor De la Cruz", "Alexis Sanchez"];
+
+personas.forEach((per, index) => {
+  piePagina.innerHTML = piePagina.innerHTML + `
+    <div>
+      <h4>${index + 1} - ${per}</h4>
+    </div>
+  `
+})
