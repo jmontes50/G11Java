@@ -29,3 +29,16 @@ Titulo2.style.border = "2px solid blue";
 const Main = document.querySelector("main");
 
 Main.style.backgroundColor = "gold";
+
+//Accediendo a varios elementos
+//querySelectorAll funciona muy parecido a querySelector, con la diferencia que retornara todos los elementos que coincidan con ese selector dentro de un NodeList (Array)
+const liItems = document.querySelectorAll(".item_lista");
+
+console.log(liItems);
+
+//al obtener un NodeList podemos iterar en ellos usando forEach
+liItems.forEach((li) => {
+  console.log(li);
+  li.style.color = "green";
+  li.style.fontWeight = "bold";
+})
