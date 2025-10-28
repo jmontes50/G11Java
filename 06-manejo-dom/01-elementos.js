@@ -50,3 +50,14 @@ console.log(inputEmail);
 console.log(inputEmail.getAttribute("type"));
 
 inputEmail.setAttribute("type","text");
+
+//EVENTOS
+const btnPassword = document.getElementById("btn-password");
+
+console.log(btnPassword);
+
+//AddEventListener es un método que me va a permitir escuchar eventos predefinidos de los elementos, va a pedir 02 argumentos, 1ero, el nombre del evento y 2do una función a ejecutar
+btnPassword.addEventListener("click", () => {
+  console.log("se hizo click!!!");
+  alert("Hiciste click!!!!");
+})
