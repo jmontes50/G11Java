@@ -20,3 +20,12 @@ Titulo1.style.padding = "20px";
 //background-color ---kebab-case
 //backgroundColor ---camelCase
 Titulo1.style.backgroundColor = "skyblue";
+
+//funciona usando la sintaxis de un selector de CSS, . para clases # para Id's y en general todo lo que se podia usar en CSS comos selector, etiquetas, pseudoclases, atributos
+const Titulo2 = document.querySelector(".titulo2");
+console.log(Titulo2);
+Titulo2.style.border = "2px solid blue";
+
+const Main = document.querySelector("main");
+
+Main.style.backgroundColor = "gold";
