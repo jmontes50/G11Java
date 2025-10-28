@@ -8,8 +8,9 @@ const incluyeTexto = (txt1, txt2) => {
   return txt1.includes(txt2)
 }
 
+export default operacion;
+
 export {
-  operacion,
   cambiarAString,
   incluyeTexto
 }
