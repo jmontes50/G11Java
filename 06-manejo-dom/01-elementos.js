@@ -74,5 +74,15 @@ btnPassword.addEventListener("click", () => {
     mostrarPassword = false;
     btnPassword.innerText = "Ver Password";
   }
-
 })
+
+const piePagina = document.querySelector("#pie-pagina");
+
+//modifica ó lee el HTML interno que tiene un elemento
+// piePagina.innerHTML = "<h2>Derechos Reservados 2025</h2>";
+piePagina.innerHTML = `
+  <h2 class="titulo-footer">Derechos Reservados 2025</h2>
+  <p>Soy un párrafo</p>
+  <p>Soy un párrafo</p>
+  <p>Soy un párrafo</p>
+`
