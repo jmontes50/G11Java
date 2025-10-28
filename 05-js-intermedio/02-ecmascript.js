@@ -25,3 +25,11 @@ const frutas = ["Kiwi", "Naranja", "Mango"];
 frutas.push("Aguaymanto");
 
 console.log(frutas);
+
+
+//////////parámetros por defecto
+const suma = (a = 7, b = 9) => a + b;
+
+console.log(suma(100, 500));
+
+console.log(suma());
