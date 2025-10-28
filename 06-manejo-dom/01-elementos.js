@@ -42,3 +42,11 @@ liItems.forEach((li) => {
   li.style.color = "green";
   li.style.fontWeight = "bold";
 })
+//1. seleccionar el item
+const inputEmail = document.querySelector("#input-email");
+//2. leer, modificar o agregar algun valor del elemento html
+console.log(inputEmail);
+
+console.log(inputEmail.getAttribute("type"));
+
+inputEmail.setAttribute("type","text");
