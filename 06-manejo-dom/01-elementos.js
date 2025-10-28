@@ -51,6 +51,9 @@ console.log(inputEmail.getAttribute("type"));
 
 inputEmail.setAttribute("type","text");
 
+const inputPassword = document.getElementById("input-password");
+let mostrarPassword = false;
+
 //EVENTOS
 const btnPassword = document.getElementById("btn-password");
 
@@ -58,6 +61,18 @@ console.log(btnPassword);
 
 //AddEventListener es un método que me va a permitir escuchar eventos predefinidos de los elementos, va a pedir 02 argumentos, 1ero, el nombre del evento y 2do una función a ejecutar
 btnPassword.addEventListener("click", () => {
-  console.log("se hizo click!!!");
-  alert("Hiciste click!!!!");
+  console.log("se cambio el type del input password");
+  // alert("Hiciste click!!!!");
+  //negamos mostrarPassword para evaluar si es false
+  if(!mostrarPassword){
+    inputPassword.setAttribute("type", "text");
+    mostrarPassword = true;
+    //la propiedad innerText es el texto interno de un elemento
+    btnPassword.innerText = "Ocultar Password";
+  } else {
+    inputPassword.setAttribute("type", "password");
+    mostrarPassword = false;
+    btnPassword.innerText = "Ver Password";
+  }
+
 })
