@@ -47,3 +47,13 @@ const [tech1, tech2, tech3] = tecnologias;
 console.log(tech1);
 console.log(tech2);
 console.log(tech3);
+
+//spread operator
+//copiando Arrays
+const platillos = ["Ceviche", "Pollo", "Hamburguesa"];
+
+const postres = ["Leche asada", "Torta"]
+
+const comida = [...platillos, "Chifa", ...postres];
+
+console.log(comida);
