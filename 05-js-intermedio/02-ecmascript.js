@@ -33,3 +33,17 @@ const suma = (a = 7, b = 9) => a + b;
 console.log(suma(100, 500));
 
 console.log(suma());
+
+
+//desestructuración en arrays
+//A comparación de los objetivos aquí usamos el indice para acceder
+const tecnologias = ["React", "Angular", "Astro"];
+
+console.log(tecnologias[0])
+console.log(tecnologias[1])
+
+const [tech1, tech2, tech3] = tecnologias;
+
+console.log(tech1);
+console.log(tech2);
+console.log(tech3);
