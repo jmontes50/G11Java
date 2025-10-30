@@ -13,6 +13,10 @@ const hacerCanchita = async () => {
   //throw sera negativo equivale un reject
   return "1. Canchita hecha!!!!";
   // throw "1. mala partida";
+
+  // setTimeout(() => {
+  //   return "1. Canchita hecha!!!!"; //esta es una limitación por sintaxis
+  // }, 3000)
 }
 
 const hacerBebidas = () => new Promise((resolve, reject) => {
@@ -37,10 +41,12 @@ const ejecutarTodo = async () => {
     //la parte que deseamos que ejecute
     const res1 = await hacerCanchita(); //espera
     console.log(res1);
+    // alert("hola!")
     notificar();
     const res2 = await hacerBebidas(); //espera
+    entrarALaSala();
     console.log(res2);
-    entrarALaSala()
+
   } catch (error) {
     //como manejamos un resultado negativo y error
     console.log(error);
