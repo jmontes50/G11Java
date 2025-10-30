@@ -47,6 +47,7 @@ const Card = (titulo, texto) => {
   //replicar y combinar todo el proceso de creación
   const divCard = document.createElement("div");
   console.log(divCard);
+  //que para cuando se agrega ya se volvio contenido HTML
   divCard.innerHTML = `
     <h2>${titulo}</h2>
     <p>${texto}</p>
@@ -64,5 +65,6 @@ const Card = (titulo, texto) => {
 const miTarjeta = Card("Mouse", "Mouse inalambrico");
 const miTarjeta2 = Card("Teclado", "Teclado mecánico");
 
+//.push
 Seccion3.appendChild(miTarjeta)
 Seccion3.appendChild(miTarjeta2)
