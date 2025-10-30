@@ -17,15 +17,30 @@ const hacerCanchita = () => {
     setTimeout(function(){
       // console.log("1. Canchita hecha!!!!");
       //y de ser positivo el resultado podemos usar resolve
-      resolve("1. Canchita hecha!!!!");
+      //Aqui dentro iria un proceso para saber si es resolve or reject
+      resolve("1. Canchita hecha!!!!"); //positivo
+      // reject("1. se quemo la canchita"); //negativo
     }, 3000);
   });
 };
+
+const hacerBebidas = () => new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("2. Bebidas preparadas!")
+  }, 2000)
+})
 
 hacerCanchita()
 //para capturar el resolve tengo que utilizar then
 .then((resultado) => {
   //con then capturamos lo que mande resolve y los podemos utilizar
   console.log(resultado);
-  console.log("2. Vamos por las bebidas");
+  // console.log("2. Vamos por las bebidas");
+  return hacerBebidas(); //retornando una nueva promesa
+})
+.then((resultado2) => {
+  console.log(resultado2);
+})
+.catch((error) => {
+  console.log(error);
 })
