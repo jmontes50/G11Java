@@ -16,7 +16,9 @@ const tarea1 = (unaFuncion) => {
 }
 
 tarea1(function(){
-  console.log("3");
+  console.log("3", () => {
+    console.log("otra funcion!!")
+  });
 });
 
 
