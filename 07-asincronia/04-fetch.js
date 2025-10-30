@@ -9,3 +9,14 @@ fetch("https://jsonplaceholder.typicode.com/posts") //GET
 .catch((err) => {
   console.log(err)
 });
+
+const getPosts = async () => {
+  try {
+    const rpta = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await rpta.json();
+    console.log(data)
+  } catch (error) {
+    console.log(error);
+  }
+}
+getPosts();
