@@ -52,7 +52,12 @@ const Card = (titulo, texto) => {
     <p>${texto}</p>
     <button class="btn">Click</button>
   `
-
+  //algo que nos permite tener un elemento es buscar solo dentro de el
+  const btn = divCard.querySelector(".btn");
+  console.log(btn);
+  btn.addEventListener("click", () => {
+    alert(`Estas viendo el producto ${titulo}`);
+  })
   return divCard;
 }
 
