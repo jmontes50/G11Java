@@ -33,6 +33,31 @@ console.log(objImg);
 
 objImg.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMKEOcBxdChLlH9V9_yIVUmu61093Vwg2HLg&s");
 
+objImg.setAttribute("alt", "Esta imagen es un logo de code")
+
 //agrega un elemento como hijo de otro después del resto de elementos
 //es como un .push pero para elementos html
 Seccion2.appendChild(objImg);
+
+//Opt3, utilizar funciones como componentes
+
+const Seccion3 = document.querySelector("#seccion3");
+
+const Card = (titulo, texto) => {
+  //replicar y combinar todo el proceso de creación
+  const divCard = document.createElement("div");
+  console.log(divCard);
+  divCard.innerHTML = `
+    <h2>${titulo}</h2>
+    <p>${texto}</p>
+    <button class="btn">Click</button>
+  `
+
+  return divCard;
+}
+
+const miTarjeta = Card("Mouse", "Mouse inalambrico");
+const miTarjeta2 = Card("Teclado", "Teclado mecánico");
+
+Seccion3.appendChild(miTarjeta)
+Seccion3.appendChild(miTarjeta2)
