@@ -27,6 +27,7 @@ const hacerCanchita = () => {
 const hacerBebidas = () => new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("2. Bebidas preparadas!")
+    // reject("2. no hay bebidas");
   }, 2000)
 })
 
@@ -36,11 +37,12 @@ hacerCanchita()
   //con then capturamos lo que mande resolve y los podemos utilizar
   console.log(resultado);
   // console.log("2. Vamos por las bebidas");
-  return hacerBebidas(); //retornando una nueva promesa
+  return hacerBebidas(); //retornando una nueva promesa, dentro del then de otra se llama encadenamiento de promesas
 })
 .then((resultado2) => {
   console.log(resultado2);
 })
+//cuando encadenamos promesas el catch funcionara para todas las promesas encadenadas
 .catch((error) => {
   console.log(error);
 })
