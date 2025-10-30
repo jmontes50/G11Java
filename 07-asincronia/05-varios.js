@@ -13,6 +13,6 @@ formulario.addEventListener("submit", (event) => {
   //targer objetivo y nos indica de donde surgio el evento
   //el correo es por el name del input
   console.log(event.target.correo.value);
-  console.log(event.target.dataset)
+  // console.log(event.target.dataset)
    console.log("Intento de envio del formulario");
 })
