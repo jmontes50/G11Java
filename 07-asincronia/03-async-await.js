@@ -22,15 +22,27 @@ const hacerBebidas = () => new Promise((resolve, reject) => {
   }, 2000)
 })
 
+const notificar = () => {
+  console.log("Ya esta!")
+}
+
+const entrarALaSala = () => {
+  console.log("Entrando a la sala de cine")
+}
+
 
 const ejecutarTodo = async () => {
   //trycatch no es netamente de Promesas o async await, es para capturar errores
   try {
+    //la parte que deseamos que ejecute
     const res1 = await hacerCanchita(); //espera
     console.log(res1);
+    notificar();
     const res2 = await hacerBebidas(); //espera
     console.log(res2);
+    entrarALaSala()
   } catch (error) {
+    //como manejamos un resultado negativo y error
     console.log(error);
   }
 
