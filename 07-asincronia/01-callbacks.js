@@ -16,13 +16,8 @@ const tarea1 = (unaFuncion) => {
 }
 
 tarea1(function(){
-  console.log("3", () => {
-    console.log("otra funcion!!")
-  });
+  console.log("3");
 });
-
-
-
 
 //ignoremos por ahora el codigo de abajo
 
