@@ -1,4 +1,5 @@
 import Card from "./Card.js";
+//importamos también obtenerProductos para la petición
 import { obtenerProductos } from "./products.js";
 
 //carrito de compras
@@ -23,27 +24,31 @@ let agregarAlCarrito = (producto, cantidad) => {
     //nombre:nombre, //claridad en el código
     nombre,
     precio,
-    cantidad
-  }
+    cantidad,
+  };
   carrito.push(nuevoProducto);
   console.log("Observando carrito...");
   console.table(carrito);
-}
+};
 
 //Manejando el DOM
 const divRoot = document.querySelector("#root");
 
-const dibujarProductos = () => {
+const dibujarProductos = async () => {
+  try {
+    //antes de dibujar hacemos la petición
+    const productosObtenidos = await obtenerProductos();
 
-  obtenerProductos();
-
-  //por cada prod que encontremos en productos...
-  productos.forEach((prod) => {
-  //... generaremos una Tarjeta desde el archivo Card.js
-    const prodCard = Card(prod);
-    //con appendChild cada div generado por la función Card se agrega como elemento hijo del divRoot
-    divRoot.appendChild(prodCard);
-  })
-}
+    //por cada prod que encontremos en productos...
+    productosObtenidos.forEach((prod) => {
+      //... generaremos una Tarjeta desde el archivo Card.js
+      const prodCard = Card(prod);
+      //con appendChild cada div generado por la función Card se agrega como elemento hijo del divRoot
+      divRoot.appendChild(prodCard);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 dibujarProductos();
