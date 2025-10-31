@@ -1,4 +1,5 @@
 import Card from "./Card.js";
+import { obtenerProductos } from "./products.js";
 
 //carrito de compras
 let productos = [
@@ -33,6 +34,9 @@ let agregarAlCarrito = (producto, cantidad) => {
 const divRoot = document.querySelector("#root");
 
 const dibujarProductos = () => {
+
+  obtenerProductos();
+
   //por cada prod que encontremos en productos...
   productos.forEach((prod) => {
   //... generaremos una Tarjeta desde el archivo Card.js
