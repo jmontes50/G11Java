@@ -5,7 +5,7 @@ const Card = (producto) => {
   const divProducto = document.createElement("div");
   //rellenamos el obj con html, pero en forma de string
   divProducto.innerHTML = `
-    <div id="root" class="grid grid-col-2 md:grid-cols-4 gap-5 p-6">
+
       <div class="p-4 border border-gray-400 rounded">
         <h2 class="text-lg font-semibold">${nombre}</h2>
         <p class="">Precio: S/ ${precio}</p>
@@ -14,7 +14,6 @@ const Card = (producto) => {
           Agregar
         </button>
       </div>
-    </div>
   `;
 
   return divProducto;
