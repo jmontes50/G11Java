@@ -1,4 +1,6 @@
-const Card = (producto) => {
+// import agregarAlCarrito ...
+
+const Card = (producto, agregarAlCarro) => {
   //desestructurando producto
   const { nombre, precio, stock } = producto;
   //creamos un obj equivalente a un div aqui en JS
@@ -20,6 +22,8 @@ const Card = (producto) => {
   console.log({ boton });
   boton.addEventListener("click", () => {
     alert(`Diste click en ${nombre}`);
+    // vamos a ejecutar la función que recibimos como parámetro
+    agregarAlCarro(producto, 1)
   })
 
   return divProducto;

@@ -42,7 +42,7 @@ const dibujarProductos = async () => {
     //por cada prod que encontremos en productos...
     productosObtenidos.forEach((prod) => {
       //... generaremos una Tarjeta desde el archivo Card.js
-      const prodCard = Card(prod);
+      const prodCard = Card(prod, agregarAlCarrito);
       //con appendChild cada div generado por la función Card se agrega como elemento hijo del divRoot
       divRoot.appendChild(prodCard);
     });
