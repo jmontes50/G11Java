@@ -11,6 +11,7 @@ let productos = [
 
 //NT: si desean usar una referencia tenemos que asegurarnos que esa referencia exista antes de invocarla.
 
+const spanCantidad = document.querySelector("#cantidad-carrito");
 let carrito = [];
 
 let agregarAlCarrito = (producto, cantidad) => {
@@ -29,10 +30,12 @@ let agregarAlCarrito = (producto, cantidad) => {
   carrito.push(nuevoProducto);
   console.log("Observando carrito...");
   console.table(carrito);
+  spanCantidad.innerText = carrito.length;
 };
 
 //Manejando el DOM
 const divRoot = document.querySelector("#root");
+
 
 const dibujarProductos = async () => {
   try {
