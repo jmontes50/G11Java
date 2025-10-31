@@ -15,6 +15,12 @@ const Card = (producto) => {
         </button>
       </div>
   `;
+  //aquí en querySelector estoy usando un selector de etiqueta de CSS
+  const boton = divProducto.querySelector("button");
+  console.log({ boton });
+  boton.addEventListener("click", () => {
+    alert(`Diste click en ${nombre}`);
+  })
 
   return divProducto;
 }
