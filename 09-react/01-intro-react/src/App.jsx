@@ -17,6 +17,9 @@ function App () {
     <p>Lorem ipsum dolor sit amet.</p>
     {/* si deseamos usar un componente lo llamamos por su nombre pero con la sintaxis de HTML */}
     <Parrafo />
+    <Parrafo />
+    <Parrafo />
+    <Parrafo />
     {/* 4. Toda etiqueta debe estar cerrada, con una etiqueta de cierre o un autocierre <img /><input /> */}
     <hr />
     {/* Algunos atributos cambian su nombre */}
