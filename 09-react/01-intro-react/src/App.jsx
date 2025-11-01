@@ -16,7 +16,8 @@ function App () {
     <h2>Main Component {100 + 400}</h2>
     <p>Lorem ipsum dolor sit amet.</p>
     {/* si deseamos usar un componente lo llamamos por su nombre pero con la sintaxis de HTML */}
-    <Parrafo />
+    {/* si queremos usar props, vamos a indicarlos en forma de atributos */}
+    <Parrafo texto="Hola!" texto2="Sushi" numero="10" />
     <Parrafo />
     <Parrafo />
     <Parrafo />
