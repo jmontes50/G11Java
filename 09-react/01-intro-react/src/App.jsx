@@ -1,14 +1,16 @@
 //JSX -> Javascript eXtension
 //1. la función que hace de componente tiene que llamarse iniciando con Mayús ej. App, Card, Formulario, Tarjeta
 function App () {
+  const titulo = "Hola soy un String de JS";
 
   //2. su return tiene que retornar JSX/HTML para indicar que se va a visualizar
   //2.1 el return del JSX/HTML se restringe a 01 elemento
   //2.2 algo que se puede hacer en caso no deseemos envolver el JSX en un 01 elemento es usar Fragment <></>
   return <>
     {/* 2.1.1 adentro ya podemos colocar los elementos que deseemos */}
-    <h1>Hola soy App</h1>
-    <h2>Main Component</h2>
+    {/* 5. si queremos interpolar/usar JS dentro de JSX/HTML tenemos que usar {} */}
+    <h1>{titulo}</h1>
+    <h2>Main Component {100 + 400}</h2>
     <p>Lorem ipsum dolor sit amet.</p>
     {/* 4. Toda etiqueta debe estar cerrada, con una etiqueta de cierre o un autocierre <img /><input /> */}
     <hr />
