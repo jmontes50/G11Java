@@ -5,7 +5,7 @@ import Parrafo from "./components/Parrafo";
 //1. la función que hace de componente tiene que llamarse iniciando con Mayús ej. App, Card, Formulario, Tarjeta
 function App () {
   const titulo = "Hola soy un String de JS";
-
+  const miTexto = "Otros textos para estudiantes";
   //2. su return tiene que retornar JSX/HTML para indicar que se va a visualizar
   //2.1 el return del JSX/HTML se restringe a 01 elemento
   //2.2 algo que se puede hacer en caso no deseemos envolver el JSX en un 01 elemento es usar Fragment <></>
@@ -18,7 +18,7 @@ function App () {
     {/* si deseamos usar un componente lo llamamos por su nombre pero con la sintaxis de HTML */}
     {/* si queremos usar props, vamos a indicarlos en forma de atributos */}
     <Parrafo texto="Hola!" texto2="Sushi" numero="10" />
-    <Parrafo />
+    <Parrafo texto={miTexto} texto2="lorem..." numero={100}/>
     <Parrafo />
     <Parrafo />
     {/* 4. Toda etiqueta debe estar cerrada, con una etiqueta de cierre o un autocierre <img /><input /> */}
