@@ -1,4 +1,5 @@
 //todo lo que hayamos instalado ira a los node_modules y la forma de acceder es con un import directo
+//ESModules la que utiliza import from
 import axios from "axios";
 
 console.log("Hola mundo desde node!!!");
