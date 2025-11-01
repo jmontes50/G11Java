@@ -30,7 +30,10 @@ let agregarAlCarrito = (producto, cantidad) => {
   carrito.push(nuevoProducto);
   console.log("Observando carrito...");
   console.table(carrito);
+  //.innerText no modifica el HTML solo el texto interno de un elemento
   spanCantidad.innerText = carrito.length;
+
+
 };
 
 //Manejando el DOM
@@ -55,3 +58,15 @@ const dibujarProductos = async () => {
 };
 
 dibujarProductos();
+
+//Dialog
+const dialog = document.querySelector("#ventana-modal");
+const btnCarrito = document.querySelector("#btn-carrito");
+const rootCarrito = document.querySelector("#root-carrito");
+
+btnCarrito.addEventListener("click", () => {
+  //abrimos el dialog en forma de modal
+  dialog.showModal();
+  //rellenamos el div con la info del carrito
+  rootCarrito.innerHTML = JSON.stringify(carrito);
+})
