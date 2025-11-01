@@ -1,4 +1,7 @@
 //JSX -> Javascript eXtension
+//6. cuando hacemos imports si es un archivo de .js o .jsx no es necesario añadirle la extension en la ruta del import
+import Parrafo from "./components/Parrafo";
+
 //1. la función que hace de componente tiene que llamarse iniciando con Mayús ej. App, Card, Formulario, Tarjeta
 function App () {
   const titulo = "Hola soy un String de JS";
@@ -12,6 +15,8 @@ function App () {
     <h1>{titulo}</h1>
     <h2>Main Component {100 + 400}</h2>
     <p>Lorem ipsum dolor sit amet.</p>
+    {/* si deseamos usar un componente lo llamamos por su nombre pero con la sintaxis de HTML */}
+    <Parrafo />
     {/* 4. Toda etiqueta debe estar cerrada, con una etiqueta de cierre o un autocierre <img /><input /> */}
     <hr />
     {/* Algunos atributos cambian su nombre */}
