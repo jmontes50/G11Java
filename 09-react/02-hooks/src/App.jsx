@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hijo1 from "./components/Hijo1";
 
 const App = () => {
   // const [getter, setter] = useState(valorInicial)
@@ -15,6 +16,9 @@ const App = () => {
   return (
     <div>
       <h1>Contador: {contador}</h1>
+      <hr />
+      {/* contador es un prop que tiene de valor el estado contador */}
+      <Hijo1 contador={contador} text="hola" />
       {/* la manera de manejar Eventos es con el attributo onEvento={funcion} */}
       <button onClick={aumentar}>Aumentar!</button>
     </div>
