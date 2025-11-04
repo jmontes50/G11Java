@@ -5,6 +5,13 @@ import TableData from "../components/TableData";
 const HomeView = () => {
   const [products, setProducts] = useState([]);
 
+  const headersData = [
+    { name: "nombre", label: "Nombre producto" },
+    { name: "descripcion", label: "Descripción" },
+    { name: "precio", label: "Precio" },
+    { name: "stock", label: "Stock" },
+  ]
+
   useEffect(() => {
     const getProducts = async () => {
       try {
@@ -26,7 +33,10 @@ const HomeView = () => {
           <li>{prod.nombre}</li>
         </ul>
       ))} */}
-      <TableData data={products} />
+      <TableData
+        data={products}
+        headers={headersData}
+      />
     </div>
   )
 }
