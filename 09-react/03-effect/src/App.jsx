@@ -3,17 +3,19 @@ import { useState, useEffect } from 'react'
 const App = () => {
   // [getter, setter]
   const [contador, setContador] = useState(0);
-  const [texto, setTexto] = useState("Hola!")
+  const [texto, setTexto] = useState("Hola!");
 
   const manejarInput = (evento) => {
     //target es de donde si disparo el evento
-    console.log(evento.target.value)
+    // console.log(evento.target.value)
     setTexto(evento.target.value);
   }
 
+  //lo que hace useEffect es escuchar los cambios de todos los estados y cuando escucha alguno se ejecuta
   useEffect(() => {
     console.log(contador);
-  });
+    console.log(texto)
+  }, [texto]);
 
   return (
     <div>
