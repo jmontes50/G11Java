@@ -20,11 +20,18 @@ const TableData = (props) => {
         </tr>
       </thead>
       <tbody>
+        {/* iteración 1, por c/prod */}
         {data.map((item) => (
           <tr key={item.id}>
             {/* En vez de indicar que propiedades mostrar podemos hacerlo más flexible
             <td>{item.id}</td>
             <td>{item.nombre}</td> */}
+            {/* iteración 2, haciendo match con las propiedades de c/prod */}
+            {headers.map((head, index) => (
+              <td key={index}>
+                {item[head.name]}
+              </td>
+            ))}
           </tr>
         ))}
       </tbody>
