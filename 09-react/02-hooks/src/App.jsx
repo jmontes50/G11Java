@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Hijo1 from "./components/Hijo1";
+import Hijo2 from "./components/Hijo2";
 
 const App = () => {
   // const [getter, setter] = useState(valorInicial)
@@ -19,6 +20,7 @@ const App = () => {
       <hr />
       {/* contador es un prop que tiene de valor el estado contador */}
       <Hijo1 contador={contador} text="hola" />
+      <Hijo2 contador={contador} accion={aumentar}></Hijo2>
       {/* la manera de manejar Eventos es con el attributo onEvento={funcion} */}
       <button onClick={aumentar}>Aumentar!</button>
     </div>
