@@ -10,7 +10,7 @@ const CreateProductView = () => {
     sku: "",
     activo: true,
     imagen: "",
-    categoriaId: 0,
+    categoriaId: 1,
   });
 
   const inputsInfo = [
@@ -21,6 +21,9 @@ const CreateProductView = () => {
     },
     { name: "descripcion", label: "Descripción del producto", type: "text" },
     { name: "precio", label: "Precio", type: "number" },
+    { name: "stock", label: "Stock Producto", type: "number" },
+    { name: "sku", label: "SKU", type: "text" },
+    { name: "imagen", label: "Imagen URL", type: "text" },
   ];
 
   const handleInput = (ev) => {
