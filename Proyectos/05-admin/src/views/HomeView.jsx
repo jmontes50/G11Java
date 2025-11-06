@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { readProducts } from "../services/productosService";
 import TableData from "../components/TableData";
 import { Pencil } from "lucide-react";
 
 const HomeView = () => {
   const [products, setProducts] = useState([]);
+
+  const navigate = useNavigate();
 
   const headersData = [
     { name: "nombre", label: "Nombre producto" },
@@ -19,7 +22,7 @@ const HomeView = () => {
       content: (info) => (
         <button
           className="btn btn-sm bg-yellow-500 text-white"
-          onClick={() => {console.log(info)}}
+          onClick={() => {navigate(`/updateproduct/${info.id}`)}}
         >
           <Pencil />
         </button>
