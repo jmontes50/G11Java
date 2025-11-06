@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../components/Input";
+import { createProduct } from "../services/productosService";
 
 const CreateProductView = () => {
   const [product, setProduct] = useState({
@@ -33,10 +34,20 @@ const CreateProductView = () => {
     setProduct({ ...product, [name]: value });
   };
 
+  const handleSubmit = async (ev) => {
+    ev.preventDefault();
+    try {
+      await createProduct(product);
+      console.log("Se creo exitosamente!");
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="max-w-7xl mx-auto p-4">
       <h1 className="text-2xl font-semibold pb-3">Crear Producto</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         {inputsInfo.map((item, index) => (
           <Input
             key={index}
@@ -54,6 +65,9 @@ const CreateProductView = () => {
           value={product.nombre}
           onChange={handleInput}
         /> */}
+        <button className="btn btn-primary" type="submit">
+          Guardar
+        </button>
       </form>
     </div>
   );
