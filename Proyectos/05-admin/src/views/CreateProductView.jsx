@@ -3,7 +3,7 @@ import Input from "../components/Input";
 
 const CreateProductView = () => {
   const [product, setProduct] = useState({
-    nombre: "",
+    nombre: "Jorge",
     descripcion: "",
     precio: 0,
     stock: 0,
@@ -24,8 +24,10 @@ const CreateProductView = () => {
   ];
 
   const handleInput = (ev) => {
+    // console.log(ev.target);
     const value = ev.target.value;
-    setProduct({ ...product, nombre: value });
+    const name = ev.target.name; //llegará descripción, precio
+    setProduct({ ...product, [name]: value });
   };
 
   return (
@@ -37,6 +39,9 @@ const CreateProductView = () => {
             key={index}
             name={item.name}
             label={item.label}
+            type={item.type}
+            handleInput={handleInput}
+            value={product}
           />
         ))}
         {/* <input
