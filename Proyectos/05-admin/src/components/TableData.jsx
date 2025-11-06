@@ -8,7 +8,7 @@
 
 const TableData = (props) => {
   //data seran los productos
-  const { data, headers } = props;
+  const { data, headers, actions } = props;
 
   return (
     <table className="table">
@@ -32,6 +32,12 @@ const TableData = (props) => {
                 {/* {item[head.name]} */}
                 {/* en caso de no tener pipe me dara undefined, que es falsy */}
                 {head.pipe ? (head.pipe(item[head.name])) : item[head.name]}
+              </td>
+            ))}
+            {/* Por cada fila vamos a agregar una columnas con las acciones posibles */}
+            {actions.map((act, index) => (
+              <td key={index}>
+                {act.content(item)}
               </td>
             ))}
           </tr>

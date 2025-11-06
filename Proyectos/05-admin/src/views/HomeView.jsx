@@ -19,8 +19,8 @@ const HomeView = () => {
       content: (info) => (
         <button
           className="btn btn-sm bg-yellow-500 text-white">
-            <Pencil />
-          </button>
+          <Pencil />
+        </button>
       )
     }
   ]
@@ -49,6 +49,7 @@ const HomeView = () => {
       <TableData
         data={products}
         headers={headersData}
+        actions={actions}
       />
     </div>
   )
