@@ -2,6 +2,7 @@ import { useState } from "react";
 import Input from "../components/Input";
 import { createProduct } from "../services/productosService";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const CreateProductView = () => {
   const [product, setProduct] = useState({
@@ -14,6 +15,8 @@ const CreateProductView = () => {
     imagen: "",
     categoriaId: 1,
   });
+
+  const navigate = useNavigate();
 
   const inputsInfo = [
     {
@@ -40,12 +43,14 @@ const CreateProductView = () => {
     try {
       await createProduct(product);
       // console.log("Se creo exitosamente!");
-      Swal.fire({
+      await Swal.fire({
         icon: "success",
         title: "Producto creado!",
         text: `${product.nombre} se creó exitosamente`,
         theme:"dark"
       });
+      // con navigate a partir de useNavigate indicamos a que ruta nos queremos dirigir
+      navigate('/')
     } catch (error) {
       console.log(error);
     }
