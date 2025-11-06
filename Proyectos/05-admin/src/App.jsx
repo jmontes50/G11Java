@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeView from "./views/HomeView";
+import CreateProductView from "./views/CreateProductView";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Routes>
         {/* Route representa cada vista con su componente */}
         <Route path="/" element={<HomeView />} />
+        <Route path="/crearproducto" element={<CreateProductView />} />
       </Routes>
       {/* <HomeView /> */}
     </BrowserRouter>
