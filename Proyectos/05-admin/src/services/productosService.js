@@ -11,6 +11,15 @@ const readProducts = async () => {
   return response.data;
 }
 
+const createProduct = async (newProduct) => {
+  const response = await axios.post(URL, newProduct);
+  if(response.status !== 201) {
+    throw new Error("Error al crear el producto")
+  }
+  return response.data;
+}
+
 export {
-  readProducts
+  readProducts,
+  createProduct
 }
