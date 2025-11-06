@@ -11,6 +11,23 @@ const readProducts = async () => {
   return response.data;
 }
 
+const readProductById = async (id) => {
+  const response = await axios.get(`${URL}/${id}`);
+  if(response.status !== 200){
+    throw new Error("Error al obtener las datos")
+  }
+  // axios da los datos de la petición en la propiedad data
+  return response.data;
+}
+
+const updateProduct = async (productEdited) => {
+  const response = await axios.put(`${URL}/${id}`, productEdited);
+  if(response.status !== 200) {
+    throw new Error("Error al actualizar los datos")
+  }
+  return response.data;
+}
+
 const createProduct = async (newProduct) => {
   const response = await axios.post(URL, newProduct);
   if(response.status !== 201) {
@@ -21,5 +38,7 @@ const createProduct = async (newProduct) => {
 
 export {
   readProducts,
-  createProduct
+  createProduct,
+  readProductById,
+  updateProduct
 }
