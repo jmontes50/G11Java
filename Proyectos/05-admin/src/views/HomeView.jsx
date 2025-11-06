@@ -8,8 +8,9 @@ const HomeView = () => {
   const headersData = [
     { name: "nombre", label: "Nombre producto" },
     { name: "descripcion", label: "Descripción" },
-    { name: "precio", label: "Precio" },
-    { name: "stock", label: "Stock" },
+    // pipe significa tubería
+    { name: "precio", label: "Precio", pipe: (texto) => `S/ ${texto.toFixed(2)}` },
+    { name: "stock", label: "Stock", pipe: (texto) => `${texto} unid.` },
   ]
 
   useEffect(() => {

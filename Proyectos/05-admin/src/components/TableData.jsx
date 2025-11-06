@@ -29,7 +29,9 @@ const TableData = (props) => {
             {/* iteración 2, haciendo match con las propiedades de c/prod */}
             {headers.map((head, index) => (
               <td key={index}>
-                {item[head.name]}
+                {/* {item[head.name]} */}
+                {/* en caso de no tener pipe me dara undefined, que es falsy */}
+                {head.pipe ? (head.pipe(item[head.name])) : item[head.name]}
               </td>
             ))}
           </tr>
