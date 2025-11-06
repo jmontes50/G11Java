@@ -1,3 +1,6 @@
+// Link va a ser como un hipervínculo para React
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -7,7 +10,8 @@ const Navbar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Link</a>
+            {/* <a>Link</a> */}
+            <Link to="/crearproducto">Crear Producto</Link>
           </li>
 
           {/* <li>
