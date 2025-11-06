@@ -37,6 +37,7 @@ const TableData = (props) => {
             {/* Por cada fila vamos a agregar una columnas con las acciones posibles */}
             {actions.map((act, index) => (
               <td key={index}>
+                {/* item representa el producto y llegara al callback info en actions en HomeView */}
                 {act.content(item)}
               </td>
             ))}

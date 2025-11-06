@@ -18,7 +18,9 @@ const HomeView = () => {
     {
       content: (info) => (
         <button
-          className="btn btn-sm bg-yellow-500 text-white">
+          className="btn btn-sm bg-yellow-500 text-white"
+          onClick={() => {console.log(info)}}
+        >
           <Pencil />
         </button>
       )
