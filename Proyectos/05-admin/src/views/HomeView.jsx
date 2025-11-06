@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react"
-import { readProducts } from "../services/productosService"
+import { useState, useEffect } from "react";
+import { readProducts } from "../services/productosService";
 import TableData from "../components/TableData";
+import { Pencil } from "lucide-react";
 
 const HomeView = () => {
   const [products, setProducts] = useState([]);
@@ -11,6 +12,17 @@ const HomeView = () => {
     // pipe significa tubería
     { name: "precio", label: "Precio", pipe: (texto) => `S/ ${texto.toFixed(2)}` },
     { name: "stock", label: "Stock", pipe: (texto) => `${texto} unid.` },
+  ]
+
+  const actions = [
+    {
+      content: (info) => (
+        <button
+          className="btn btn-sm bg-yellow-500 text-white">
+            <Pencil />
+          </button>
+      )
+    }
   ]
 
   useEffect(() => {
