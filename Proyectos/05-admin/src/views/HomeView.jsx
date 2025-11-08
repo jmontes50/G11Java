@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { readProducts } from "../services/productosService";
 import TableData from "../components/TableData";
-import { Pencil } from "lucide-react";
+import { Pencil, Trash } from "lucide-react";
 
 const HomeView = () => {
   const [products, setProducts] = useState([]);
@@ -17,6 +17,10 @@ const HomeView = () => {
     { name: "stock", label: "Stock", pipe: (texto) => `${texto} unid.` },
   ]
 
+  const handleDelete = (id) => {
+    console.log("Eliminar!!!", id)
+  }
+
   const actions = [
     {
       content: (info) => (
@@ -26,6 +30,16 @@ const HomeView = () => {
         >
           <Pencil />
         </button>
+      )
+    },
+    {
+      content: (info) => (
+        <button
+          className="btn btn-sm bg-red-600 text-white"
+          onClick={() => {handleDelete(info)}}
+        >
+            <Trash />
+          </button>
       )
     }
   ]
