@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { readProducts } from "../services/productosService";
+import { readProducts, deleteProduct } from "../services/productosService";
 import TableData from "../components/TableData";
 import { Pencil, Trash } from "lucide-react";
+import Swal from "sweetalert2";
 
 const HomeView = () => {
   const [products, setProducts] = useState([]);
@@ -17,9 +18,22 @@ const HomeView = () => {
     { name: "stock", label: "Stock", pipe: (texto) => `${texto} unid.` },
   ]
 
-  const handleDelete = (id) => {
-    console.log("Eliminar!!!", id)
-  }
+  const handleDelete = async (info) => {
+    // console.log("Eliminar!!!", id)
+    const confirm = await Swal.fire({
+      title:`Deseas eliminar ${info.nombre}?`,
+      text: 'Esta acción es irreversible',
+      icon: 'warning',
+      showCancelButton: true,
+      textCancelButton: "Cancelar",
+      showConfirmButton: true,
+      textConfirmButton: "Sí, eliminar"
+    })
+
+  console.log(confirm)
+
+}
+
 
   const actions = [
     {
