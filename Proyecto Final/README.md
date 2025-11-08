@@ -35,8 +35,8 @@ El objetivo principal es **usar los fundamentos de JavaScript y React** para cre
 El proyecto debe cubrir la base de un CRUD  (ejemplo: `users`, `tasks`, `products`):
 
 1. **Read (listar):** vista con listado del recurso (tabla o tarjetas).  
-2. **Create (crear):** formulario controlado con validaciones mínimas, guardando en MockAPI.  
-3. **Update (editar):** editar un registro y actualizar la información en MockAPI.  
+2. **Create (crear):** formulario controlado con validaciones mínimas, guardando en API.  
+3. **Update (editar):** editar un registro y actualizar la información en API.  
 4. **Delete (eliminar):** acción para borrar con confirmación.  
 5. **UI mínima:** Que funcione en desktop principalmente, ideal que también en mobile
 
