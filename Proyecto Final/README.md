@@ -104,7 +104,6 @@ npm run dev
 
 ## Entregables
 - Código en el repositorio con este README actualizado.  
-- URL de la API en MockAPI (un recurso único).  
 
 ---
 
