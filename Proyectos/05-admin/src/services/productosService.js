@@ -21,7 +21,7 @@ const readProductById = async (id) => {
 }
 
 const updateProduct = async (productEdited) => {
-  const response = await axios.put(`${URL}/${id}`, productEdited);
+  const response = await axios.put(`${URL}/${productEdited.id}`, productEdited);
   if(response.status !== 200) {
     throw new Error("Error al actualizar los datos")
   }

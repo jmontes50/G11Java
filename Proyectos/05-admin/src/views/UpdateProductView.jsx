@@ -1,10 +1,11 @@
 // useParams nos da un objeto con los parámetros que tenga la URL
 //https://dominio.com/editar/dsdhisuad
 ///editar/:id ---> { id:dsdhisuad }
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { readProductById } from "../services/productosService";
+import { readProductById, updateProduct } from "../services/productosService";
 import Input from "../components/Input";
+import Swal from "sweetalert2"
 
 const UpdateProductView = () => {
   const [product, setProduct] = useState({
@@ -20,6 +21,7 @@ const UpdateProductView = () => {
 
   const { id } = useParams();
   // console.log(id);
+  const navigate = useNavigate();
 
   const inputsInfo = [
     {
@@ -43,6 +45,19 @@ const UpdateProductView = () => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
+    try {
+      const result = await updateProduct(product);
+      console.log(result);
+      await Swal.fire({
+        title:"Producto Editado",
+        text:`${product.nombre} se editó exitosamente`,
+        icon: "success",
+        theme:"dark"
+      });
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {
