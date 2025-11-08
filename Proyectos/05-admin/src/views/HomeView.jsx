@@ -27,7 +27,8 @@ const HomeView = () => {
       showCancelButton: true,
       textCancelButton: "Cancelar",
       showConfirmButton: true,
-      textConfirmButton: "Sí, eliminar"
+      textConfirmButton: "Sí, eliminar",
+      theme: "dark"
     })
 
   console.log(confirm)
