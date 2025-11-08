@@ -30,9 +30,19 @@ const HomeView = () => {
       textConfirmButton: "Sí, eliminar",
       theme: "dark"
     })
-
-  console.log(confirm)
-
+    try {
+      // console.log(confirm)
+      await deleteProduct(info.id);
+      //filtrar productos por el id que ya eliminamos con la petición
+      const filteredProducts = products.filter((prod) => {
+        //todos los productos con id diferente de info.id
+        return prod.id !== info.id
+      })
+      //actualizo el estado del componente solo con los datos filtrados
+      setProducts(filteredProducts);
+    } catch (error) {
+      console.log(error)
+    }
 }
 
 
