@@ -41,8 +41,10 @@ El proyecto debe cubrir la base de un CRUD  (ejemplo: `users`, `tasks`, `product
 5. **UI mínima:** Que funcione en desktop principalmente, ideal que también en mobile
 
 > [!NOTE]  
-> De nuevo, se puede obviar alguna de las acciones como Update o Delete en el CRUD, lo importante es el avance y tener al menos 2
+> De nuevo, se puede obviar alguna de las acciones como Update o Delete en el CRUD, lo importante es el avance y tener al menos 2 de las acciones
 
+> [!NOTE]  
+> Pueden tomar como referencia el proyecto 05-admin
 ---
 
 ## Stack y recursos
