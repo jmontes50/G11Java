@@ -25,9 +25,9 @@ const HomeView = () => {
       text: 'Esta acción es irreversible',
       icon: 'warning',
       showCancelButton: true,
-      textCancelButton: "Cancelar",
+      cancelButtonText: "Cancelar",
       showConfirmButton: true,
-      textConfirmButton: "Sí, eliminar",
+      confirmButtonText: "Sí, eliminar",
       theme: "dark"
     })
     try {
