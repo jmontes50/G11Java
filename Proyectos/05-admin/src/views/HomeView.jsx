@@ -38,8 +38,8 @@ const HomeView = () => {
           className="btn btn-sm bg-red-600 text-white"
           onClick={() => {handleDelete(info)}}
         >
-            <Trash />
-          </button>
+          <Trash />
+        </button>
       )
     }
   ]
