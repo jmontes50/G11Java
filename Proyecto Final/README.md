@@ -1,4 +1,4 @@
-# G29 – MVP CRUD con React
+# G11 – MVP CRUD con React
 
 ## Índice
 1. [Resumen del proyecto (MVP)](#resumen-del-proyecto-mvp)  
